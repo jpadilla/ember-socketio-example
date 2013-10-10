@@ -1,0 +1,10 @@
+<h2>Welcome to Ember.js</h2>
+
+{{view Ember.TextField valueBinding="controller.message"}}
+<button {{action "addMessage"}}>Send</button>
+
+<ul>
+  {{#each item in content}}
+    <li>{{item}}</li>
+  {{/each}}
+</ul>
